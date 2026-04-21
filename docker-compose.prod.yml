@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: ./apps/web
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    environment:
+      - VITE_BACKEND_URL=/api
+    restart: always
+    depends_on:
+      - backend
+
+  backend:
+    build:
+      context: ./apps/backend
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    env_file:
+      - .env
+    environment:
+      - PORT=3001
+      - PYTHON_SERVICE_URL=http://python_service:8000
+    restart: always
+    depends_on:
+      - python_service
+
+  python_service:
+    build:
+      context: ./apps/python_service
+      dockerfile: Dockerfile
+    expose:
+      - "8000"
+    restart: always

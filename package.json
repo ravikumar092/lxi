@@ -1,0 +1,18 @@
+{
+  "name": "lawyer-app-workspace",
+  "private": true,
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@supabase/supabase-js": "^2.103.2",
+    "turbo": "latest"
+  },
+  "packageManager": "npm@10.0.0"
+}

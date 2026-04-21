@@ -1,0 +1,43 @@
+export const LIGHT_THEME = {
+  bg: "#F3F4F8",
+  surface: "#FFFFFF",
+  sidebar: "#0F1C3F",
+  topbar: "#FFFFFF",
+  border: "#E2E6EF",
+  borderSoft: "#EDF0F5",
+  text: "#1A2340",
+  textSub: "#4A5568",
+  textMuted: "#8A94B0",
+  accent: "#C9A84C",
+  accentDark: "#9B7B28",
+  accentBg: "#FBF4E3",
+  accentBorder: "#E8D18A",
+  shadow: "0 1px 4px rgba(15,28,63,0.08)",
+  pending:  { bg: "#FBF4E3", text: "#9B7B28", border: "#E8D18A" },
+  fresh:    { bg: "#E8F1FB", text: "#2A7BD4", border: "#B3D0F0" },
+  disposed: { bg: "#E3F5EE", text: "#1A8C5B", border: "#9FD9BC" },
+  archived: { bg: "#F3F4F7", text: "#8A94B0", border: "#D1D5E0" },
+};
+
+export const DARK_THEME = {
+  bg: "#0A0F1E",
+  surface: "#111827",
+  sidebar: "#060C1A",
+  topbar: "#111827",
+  border: "#1F2A40",
+  borderSoft: "#172035",
+  text: "#E8EDF5",
+  textSub: "#A0AABF",
+  textMuted: "#5A6580",
+  accent: "#C9A84C",
+  accentDark: "#E8C96A",
+  accentBg: "rgba(201,168,76,0.12)",
+  accentBorder: "rgba(201,168,76,0.3)",
+  shadow: "0 1px 4px rgba(0,0,0,0.3)",
+  pending:  { bg: "rgba(201,168,76,0.15)",  text: "#C9A84C", border: "rgba(201,168,76,0.3)" },
+  fresh:    { bg: "rgba(42,123,212,0.15)",  text: "#5B9FE8", border: "rgba(42,123,212,0.3)" },
+  disposed: { bg: "rgba(26,140,91,0.15)",   text: "#2ECC8A", border: "rgba(26,140,91,0.3)" },
+  archived: { bg: "rgba(138,148,176,0.1)",  text: "#8A94B0", border: "rgba(138,148,176,0.2)" },
+};
+
+export type Theme = typeof LIGHT_THEME;
