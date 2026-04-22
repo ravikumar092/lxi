@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": ".\\\\.venv\\\\Scripts\\\\python.exe main.py",
-    "build": "echo \"No build step for python\"",
-   "start": "python3 main.py"
+   "build": "pip install -r requirements.txt",
+  "start": "python3 main.py"
   }
 }
