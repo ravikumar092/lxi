@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "node --env-file=../../.env --watch server/index.js",
-    "start": "node --env-file=../../.env server/index.js"
+    "start": "node server/index.js"
   },
   "dependencies": {
     "@google/genai": "^1.44.0",
