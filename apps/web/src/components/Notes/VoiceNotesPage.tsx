@@ -199,7 +199,9 @@ export default function VoiceNotesPage({ T, cases }: VoiceNotesPageProps) {
                                     background: isActive ? (meta?.bg || 'rgba(201,168,76,0.15)') : T.bg,
                                     color: isActive ? (meta?.color || '#C9A84C') : T.textMuted,
                                     fontSize: 11, fontWeight: 700, cursor: 'pointer',
-                                    border: `1px solid ${isActive ? (meta?.color || '#C9A84C') + '40' : T.borderSoft}`,
+                                    border: isActive
+                                                      ? `1px solid ${(meta?.color || '#C9A84C') + '40'}`
+                                                      : 'none',
                                     transition: 'all 0.15s'
                                 }}
                             >
