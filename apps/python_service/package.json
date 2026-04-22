@@ -4,6 +4,6 @@
   "scripts": {
     "dev": ".\\\\.venv\\\\Scripts\\\\python.exe main.py",
     "build": "echo \"No build step for python\"",
-    "start": ".\\\\.venv\\\\Scripts\\\\python.exe main.py"
+   "start": "python3 main.py"
   }
 }
